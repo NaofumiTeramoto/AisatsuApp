@@ -12,11 +12,11 @@ import android.widget.TimePicker;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     int ITimes;
+    int iTimes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(this);
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(ITimes<2 || ITimes> 18) {
                 textView.setText("こんばんは");
             } else if(ITimes<10){
+        setContentView(R.layout.activity_main);
                 textView.setText("おはよう");
             } else{
                 textView.setText("こんにちは");
