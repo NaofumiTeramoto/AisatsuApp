@@ -12,7 +12,6 @@ import android.widget.TimePicker;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     int ITimes;
-    int iTimes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
